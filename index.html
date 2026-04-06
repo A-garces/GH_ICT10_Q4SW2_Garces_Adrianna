@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>SW 2</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Grade 10 Classmate System</h1>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="Input1" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Section:</label>
+            <input type="text" class="form-control" id="Input2" name="section">
+        </div>
+        <div class="mb-3">
+            <label for="color" class="form-label">Favorite Subject:</label>
+            <input type="text" class="form-control" id="Input3" name="subject">
+        </div>
+        <button type="button" class="btn btn-dark" py-click="student_info">Show list</button>
+        <button type="button" class="btn btn-dark" py-click="student1_info">Add a Classmate</button>
+    </form>
+
+<br>
+
+    <div id="output"></div>
+    <div id="output1"></div>
+
+</div>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
